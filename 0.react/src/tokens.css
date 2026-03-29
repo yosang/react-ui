@@ -1,0 +1,25 @@
+:root {
+    /* Colors */
+    --color-primary: #004A99;
+    --color-secondary: #536070;
+    --color-tetiary: #757491;
+    --color-text: #ecedef;
+    --color-bg: #ffffff;
+
+    /* Spacing */
+    --radius: 8px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+
+    /* Typography */
+    --font-size: 1rem;
+}
+
+@media (max-width: 640px){
+    :root {
+        --spacing-sm: 8px;
+        --spacing-md: 12px;
+
+        --font-size: 0.95rem;
+    }
+}

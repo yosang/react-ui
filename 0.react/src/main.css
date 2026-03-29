@@ -1,0 +1,24 @@
+@import './tokens.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.ui-button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--radius);
+    font-size: var(--font-size);
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+.ui-button.primary {
+    background: var(--color-primary);
+}
+
+.ui-button.secondary {
+    background: var(--color-secondary);
+}
