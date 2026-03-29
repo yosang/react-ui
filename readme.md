@@ -49,3 +49,4 @@ Run ladle with `npx ladle serve` or use the script provided `npm start`.
 
 # Dependencies
 - [lucide-react](https://lucide.dev/icons/)
+- [m3-ripple](https://github.com/SaltyAom/m3-ripple)

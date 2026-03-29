@@ -1,0 +1,34 @@
+.ui-input {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border); 
+    background-color: var(--color-bg);
+    font-size: var(--font-size);
+    transition: var(--transition-speed);
+    width: 100%;
+}
+
+.ui-input.primary {
+    border-color: var(--color-primary);
+}
+
+.ui-input.secondary {
+    border-color: var(--color-secondary);
+}
+
+.ui-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(3, 98, 198, 0.2);
+}
+
+.ui-input:disabled {
+    background-color: var(--color-tertiary);
+    color: var(--color-muted);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.ui-input:hover:not(:disabled) {
+    background-color: var(--color-highlight);
+}

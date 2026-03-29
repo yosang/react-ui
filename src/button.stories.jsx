@@ -44,3 +44,14 @@ export const IconWithoutText = () => (
 export const TrashIconWithoutText = () => (
     <Button variant="primary" icon={<TrashIcon />} />
 )
+
+export const DisabledButton = () => (
+    <Button variant="primary" disabled={true}>
+        Button
+    </Button>
+)
+export const DisabledButtonWithIcon = () => (
+    <Button variant="primary" icon={<CrossIcon />} hasText={true} disabled={true}>
+        Button with an icon
+    </Button>
+)
