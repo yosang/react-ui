@@ -1,11 +1,15 @@
 import './button.css'
 import '../main.css'
 
-export function Button({ children, variant = "primary", onClick, icon, hasText, ...props }) {
+import { Ripple } from 'm3-ripple';
+import 'm3-ripple/ripple.css'
+
+export function Button({ children, variant = "primary", onClick, icon, hasText, rippleEffect = true,...props }) {
     return (
-        <button className={`ui-button ${variant}`} onClick={onClick} {...props} >
+        <button className={`ui-button ${variant}`} onClick={onClick} {...props} style={ { position: "relative" } }>
+            {rippleEffect && <Ripple hoverOpacity={0}/>}
             {icon && hasText && <span className='ui-button-icon-text'>{icon}</span>}
-            {icon && !hasText && <span className='ui-button-icont'>{icon}</span>}
+            {icon && !hasText && <span className='ui-button-icon'>{icon}</span>}
             {children}
         </button>
     );

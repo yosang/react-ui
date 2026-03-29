@@ -31,6 +31,12 @@ export const IconWithText = () => (
     </Button>
 )
 
+export const IconWithTextAndNoRipple = () => (
+    <Button variant="primary" icon={<CrossIcon />} hasText={true} rippleEffect={false}>
+        Button with an icon
+    </Button>
+)
+
 export const IconWithoutText = () => (
     <Button variant="primary" icon={<CrossIcon />} />
 )

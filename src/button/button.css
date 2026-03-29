@@ -7,6 +7,8 @@
     color: var(--color-text);
     cursor: pointer;
     transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
 }
 
 /* Variants */
@@ -25,19 +27,13 @@
     background: var(--color-secondary-hover);
 }
 
-.ui-button-icon-with-text:hover {
-    margin-right: 8px;
-    position: relative;
-    top: 5px;
-}
-
 .ui-button-icon-text {
     margin-right: 8px;
     position: relative;
-    top: 5px;
+    top: 1px;
 }
 
 .ui-button-icon {
     position: relative;
-    top: 5px;
+    top: 1px;
 }
