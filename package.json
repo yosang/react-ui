@@ -1,13 +1,14 @@
 {
-  "name": "@yosang/react",
-  "version": "1.0.1",
-  "description": "A small demo of a web component ui library",
+  "name": "@yosang/react-ui",
+  "version": "1.0.0",
+  "description": "A small web component ui library",
   "main": "src/main.js",
   "files": [
     "src"
   ],
   "type": "module",
   "scripts": {
+    "start":"ladle serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -16,5 +17,8 @@
     "library"
   ],
   "author": "Yosmel Chiang",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@ladle/react": "^5.1.1"
+  }
 }

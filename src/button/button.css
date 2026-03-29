@@ -1,11 +1,4 @@
-@import './tokens.css';
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* Global styles */
 .ui-button {
     padding: var(--spacing-sm) var(--spacing-md);
     border: none;
@@ -13,12 +6,21 @@
     font-size: var(--font-size);
     color: var(--color-text);
     cursor: pointer;
+    transition: all 0.2s;
 }
 
+/* Tones */
 .ui-button.primary {
     background: var(--color-primary);
 }
 
+.ui-button.primary:hover {
+    background: var(--color-primary-hover);
+}
+
 .ui-button.secondary {
     background: var(--color-secondary);
+}
+.ui-button.secondary:hover {
+    background: var(--color-secondary-hover);
 }

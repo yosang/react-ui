@@ -1,10 +1,23 @@
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Design Tokens */
+
 :root {
     /* Colors */
     --color-primary: #004A99;
+    --color-primary-hover: #0362c6;
+
     --color-secondary: #536070;
-    --color-tetiary: #757491;
+    --color-secondary-hover: #373c41;
+
     --color-text: #ecedef;
     --color-bg: #ffffff;
+    
 
     /* Spacing */
     --radius: 8px;
