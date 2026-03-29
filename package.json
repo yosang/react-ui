@@ -8,7 +8,7 @@
   ],
   "type": "module",
   "scripts": {
-    "start":"ladle serve",
+    "start": "ladle serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -18,7 +18,14 @@
   ],
   "author": "Yosmel Chiang",
   "license": "MIT",
+  "peerDependencies": {
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19"
+  },
   "dependencies": {
+    "lucide-react": "^1.7.0"
+  },
+  "devDependencies": {
     "@ladle/react": "^5.1.1"
   }
 }

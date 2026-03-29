@@ -9,7 +9,7 @@
     transition: all 0.2s;
 }
 
-/* Tones */
+/* Variants */
 .ui-button.primary {
     background: var(--color-primary);
 }
@@ -23,4 +23,21 @@
 }
 .ui-button.secondary:hover {
     background: var(--color-secondary-hover);
+}
+
+.ui-button-icon-with-text:hover {
+    margin-right: 8px;
+    position: relative;
+    top: 5px;
+}
+
+.ui-button-icon-text {
+    margin-right: 8px;
+    position: relative;
+    top: 5px;
+}
+
+.ui-button-icon {
+    position: relative;
+    top: 5px;
 }
