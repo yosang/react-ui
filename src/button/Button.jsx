@@ -1,4 +1,4 @@
-import './button.css'
+import './Button.css'
 import '../main.css'
 
 import { Ripple } from 'm3-ripple';

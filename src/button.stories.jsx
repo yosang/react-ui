@@ -1,4 +1,4 @@
-import { Button } from "./button/button.jsx";
+import { Button } from "./button/Button.jsx";
 import { CrossIcon } from "./icons/action/CrossIcon.jsx";
 import { TrashIcon } from "./icons/content/TrashIcon.jsx";
 
