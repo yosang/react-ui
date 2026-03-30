@@ -1,4 +1,5 @@
-# Demo ui lib
+# About
+A minimalistic Material UI inspired react library.
 
 ## Consuming the library
 
