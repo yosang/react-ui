@@ -17,7 +17,7 @@ export function Navbar({ children, sticky = true, ...props }) {
                 <NavLink>About</NavLink>
                 <NavLink>Contact</NavLink>
                 {children && (
-                    <Divider />
+                    <Divider direction='vertical' />
                 )}
                 {children}
             </NavItems>
