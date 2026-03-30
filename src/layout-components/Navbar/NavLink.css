@@ -1,14 +1,6 @@
 .ui-navlink {
     margin: 0;
-    padding: 5px;
-    border: 1px solid transparent;
     font-size: var(--font-size);   
-    color: black;
+    color: var(--color-text-dark);
     text-decoration: none;
-    transition: all ease-in var(--transition-speed);
-}
-
-.ui-navlink:hover {
-    border-radius: var(--radius);
-    color: var(--color-secondary);
 }
