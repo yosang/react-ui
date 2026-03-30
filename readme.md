@@ -1,5 +1,5 @@
 # About
-A minimalistic Material UI inspired react library.
+A minimalistic, yet professional react library.
 
 # Consuming the library
 
