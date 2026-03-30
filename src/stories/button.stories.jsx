@@ -9,6 +9,9 @@ export const Primary = () => (
 export const Secondary = () => (
     <Button variant="secondary">Secondary Button</Button>
 );
+export const Tertiary = () => (
+    <Button variant="tertiary">Tertiary Button</Button>
+);
 
 export const Clickable = () => (
     <Button

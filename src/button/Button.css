@@ -32,6 +32,16 @@
     background: var(--color-secondary-hover);
 }
 
+.ui-button.tertiary {
+    background: var(--color-text);
+    color: var(--color-text-dark);
+    outline-width: 1px;
+}
+
+.ui-button.tertiary:hover {
+    background: var(--color-text-hover);
+}
+
 .ui-button-icon-text {
     margin-right: 8px;
     position: relative;
