@@ -6,9 +6,9 @@ import { Divider } from '../Divider/Divider';
 import '../../main.css'
 
 
-export function Navbar({ children, ...props }) {
+export function Navbar({ children, sticky = true, ...props }) {
     return (
-        <Container direction="row" {...props}>
+        <Container direction="row" style={sticky ? { position: "sticky", top: 0, zIndex: 1000 } : {}} {...props}>
             <div>
                 Logo
             </div>

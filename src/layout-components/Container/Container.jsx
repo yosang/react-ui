@@ -3,7 +3,8 @@ import '../../main.css'
 
 export function Container({ children, centered = true, border = "none", direction = "column", ...props }) {
     return (
-        <div className={`ui-container 
+        <div 
+        className={`ui-container 
             ${centered ? "" : "non-centered"}
             ${direction == "row" ? "direction-row":""}
             ${border == "left" ? "border-left" 
@@ -11,8 +12,9 @@ export function Container({ children, centered = true, border = "none", directio
                 : border == "bottom" ? "border-bottom" 
                 : border == "top" ? "border-top" 
                 : border == "none" ? "border-none"
-                : "border-all"}
-        `}>
+                : "border-all"}`
+        }
+        {...props}>
             {children}
         </div >
     )
