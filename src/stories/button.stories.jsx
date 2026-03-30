@@ -1,6 +1,6 @@
-import { Button } from "./button/Button.jsx";
-import { CrossIcon } from "./icons/action/CrossIcon.jsx";
-import { TrashIcon } from "./icons/content/TrashIcon.jsx";
+import { Button } from "../button/Button.jsx";
+import { CrossIcon } from "../icons/action/CrossIcon.jsx";
+import { TrashIcon } from "../icons/content/TrashIcon.jsx";
 
 export const Primary = () => (
     <Button variant="primary">Primary Button</Button>

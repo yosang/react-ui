@@ -1,0 +1,6 @@
+.ui-divider-vertical {
+  margin: 0;
+    width: 1px;
+  height: auto;
+  align-self: stretch;
+}
