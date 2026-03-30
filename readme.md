@@ -1,7 +1,7 @@
 # About
 A minimalistic Material UI inspired react library.
 
-## Consuming the library
+# Consuming the library
 
 To consume this library simply install it on your app.
 
@@ -14,6 +14,9 @@ then import the components as needed.
 ```jsx
 import { Button } from '@yosang/react-ui'
 ```
+
+# Documentation
+No documentation yet...
 
 # Testing the components locally
 This library uses [@ladle/react](https://www.npmjs.com/package/@ladle/react) for component testing.
