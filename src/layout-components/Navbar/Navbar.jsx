@@ -1,8 +1,7 @@
 import { Container } from '../Container/Container';
 import { NavItems } from './NavItems'
 import { NavLink } from './NavLink';
-
-// import { Divider } from '../Divider/Divider';
+import { Divider } from '../Divider/Divider';
 
 import '../../main.css'
 
@@ -17,8 +16,11 @@ export function Navbar({ children, ...props }) {
                 <NavLink>Home</NavLink>
                 <NavLink>About</NavLink>
                 <NavLink>Contact</NavLink>
+                {children && (
+                    <Divider />
+                )}
+                {children}
             </NavItems>
-            {children}
         </Container>
     )
 }
