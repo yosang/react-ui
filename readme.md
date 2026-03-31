@@ -1,8 +1,14 @@
+![npm version](https://img.shields.io/npm/v/@yosang/react-ui)
+![npm downloads](https://img.shields.io/npm/dw/@yosang/react-ui)
+![license](https://img.shields.io/npm/l/@yosang/react-ui)
+
 # About
-A minimalistic, yet professional React UI component library.
+A minimalistic and professional React UI component library.
 
 > ⚠️ This library is currently experimental and not recommended for production use.
 > Components are still being improved for type safety and accessibility.
+
+Built as a learning project to explore modern UI architecture and design systems.
 
 ## Features
 - Minimal and clean design system
@@ -18,14 +24,25 @@ A minimalistic, yet professional React UI component library.
 - [ ] Theme customization
 
 ## Components
-- Button
-- Input
+
+**Layout**
 - Container
 - Divider
 - Modal
-- Spinner
-- Table
 - Drawer
+
+**Navigation**
+- Navbar
+
+**Inputs & Actions**
+- Button
+- Input
+
+**Feedback**
+- Spinner
+
+**Data Display**
+- Table
 - ProductCard
 - Label
 
@@ -49,6 +66,15 @@ export default function App() {
 Documentation is currently in progress.  
 In the meantime, you can explore components using Ladle stories.
 
+## Preview
+
+Run the development environment to explore components interactively:
+
+```bash
+npm install
+npm start
+```
+
 ## Local Development & Testing
 This library uses [@ladle/react](https://www.npmjs.com/package/@ladle/react) for component development and testing.
 
@@ -71,7 +97,7 @@ export const Primary = () => (
 ```
 
 ## Why this library?
-This project is a personal effort to learn and understand how modern UI libraries like Tailwind, shadcn and Material UI are built, with a focus on:
+This project is a personal effort to learn and understand how modern UI libraries such as Tailwind, shadcn and Material UI are built, with a focus on:
 
 - Component reusability
 - Design systems
