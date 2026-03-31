@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 /* CSS Reset */
 * {
     box-sizing: border-box;
@@ -6,9 +8,14 @@
     /* color: var(--color-text-dark) */
 }
 
+
 /* Design Tokens */
 
 :root {
+    
+    /* Font */
+    --font-family: 'Quicksand', sans-serif;
+
     /* Colors */
     --color-primary: #004A99;
     --color-primary-hover: #0362c6;
@@ -39,6 +46,10 @@
 
     /* Effects */
     --transition-speed: 0.2s;
+}
+
+html, body {
+    font-family: var(--font-family);
 }
 
 /* Overlay for backdrops */
