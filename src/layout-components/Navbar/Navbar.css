@@ -10,3 +10,10 @@
 .ui-navitems.vertical {
     flex-direction: column;
 }
+
+.ui-navlink {
+    margin: 0;
+    font-size: var(--font-size);   
+    color: var(--color-text-dark);
+    text-decoration: none;
+}
