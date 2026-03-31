@@ -5,10 +5,9 @@ import { Container } from '../Container/Container';
 import { Divider } from '../Divider/Divider';
 
 export function Modal({ isOpen, onClose, title, children }) {
-    if (!isOpen) return null; // 
 
     return (
-        <div className="ui-modal-backdrop" onClick={onClose}>
+        <div className={`ui-overlay center ${isOpen ? "open":""}`} onClick={onClose}>
             <Container
                 className="ui-modal"
                 centered={true}

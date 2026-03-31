@@ -41,6 +41,28 @@
     --transition-speed: 0.2s;
 }
 
+/* Overlay for backdrops */
+.ui-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-speed);
+}
+
+.ui-overlay.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.ui-overlay.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media (max-width: 640px){
     :root {
