@@ -11,6 +11,13 @@
     align-items: center;
 }
 
+.ui-container.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
 .ui-container.direction-row {
     flex-direction: row;
     justify-content: space-between;

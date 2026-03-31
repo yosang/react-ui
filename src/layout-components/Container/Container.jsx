@@ -1,10 +1,11 @@
 import './Container.css'
 import '../../main.css'
 
-export function Container({ children, centered = true, border = "none", direction = "column", sticky, ...props }) {
+export function Container({ children, centered = true, border = "none", direction = "column", layout = "flex", sticky, ...props }) {
     return (
         <div 
         className={`ui-container 
+            ${layout == "grid" ? "grid-layout":""}
             ${sticky ? "sticky":""}
             ${centered ? "" : "non-centered"}
             ${direction == "row" ? "direction-row":""}
