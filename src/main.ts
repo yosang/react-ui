@@ -7,6 +7,8 @@ export * from "./layout-components/Modal/Modal.jsx";
 export * from "./layout-components/Spinner/Spinner.jsx";
 export * from "./layout-components/Table/Table.jsx";
 export * from "./layout-components/Drawer/Drawer.jsx";
+export * from "./layout-components/Card/ProductCard.jsx";
+export * from "./layout-components/Label/Label.jsx";
 
 // Typed components
 export { Navbar, NavItems, NavLink } from "./layout-components/Navbar/Navbar";

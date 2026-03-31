@@ -4,7 +4,23 @@ import { ProductCard } from "../layout-components/Card/ProductCard";
 export function ShowCard() {
     return (
     <Container>
-        <ProductCard image="https://www.fjellsport.no/assets/blobs/vj-ultra3-lime-1-8d0494608e.jpeg?preset=medium" title="Sniickers" description="Cool pair of snickers" price="449" />
+        <ProductCard 
+        image="https://www.fjellsport.no/assets/blobs/vj-ultra3-lime-1-8d0494608e.jpeg?preset=medium" 
+        discount="25" 
+        title="Sniickers" 
+        description="Cool pair of snickers" 
+        price="449" />
     </Container>
+    )
+}
+
+export function ShowCardWithoutContainer() {
+    return (
+        <ProductCard 
+        image="https://www.fjellsport.no/assets/blobs/vj-ultra3-lime-1-8d0494608e.jpeg?preset=medium" 
+        discount="25" 
+        title="Sniickers" 
+        description="Cool pair of snickers" 
+        price="449" />
     )
 }
