@@ -45,3 +45,9 @@
 .ui-container.border-none {
     border: none;
 }
+
+@media (max-width : 600px) {
+    .ui-container.direction-row {
+        flex-direction: column;
+    }
+}

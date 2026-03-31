@@ -12,12 +12,11 @@ export function Button({
     icon,
     hasText,
     rippleEffect = true,
-    spinner = false,
-    loadingState = false,
-    loadingText,
+    spinner,
     ...props }) {
 
-    const spinnerEnabled = spinner && loadingState;
+    const spinnerEnabled = spinner?.state
+    const loadingText = spinner?.text
 
     return (
         <button
@@ -33,9 +32,11 @@ export function Button({
             {icon && !hasText && <span className='ui-button-icon'>{icon}</span>}
 
             {spinnerEnabled && <Spinner size={20} />}
+
             <span style={{ marginLeft: spinnerEnabled ? 8 : 0 }}>
-                {spinnerEnabled ? loadingText : children}
+                {spinnerEnabled ? (loadingText || "Loading...") : children}
             </span>
+
         </button>
     );
 }

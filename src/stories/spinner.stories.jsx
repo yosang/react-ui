@@ -13,5 +13,5 @@ export function SpinnerOnButton() {
         setTimeout(() => setLoading(false), 2000)
     }, [loading])
 
-    return <Button spinner={true} loadingState={loading} loadingText={"Loading..."} onClick={() => setLoading(!loading)}>Save</Button>
+    return <Button spinner={ { state: loading} } onClick={() => setLoading(!loading)}>Save</Button>
 }
