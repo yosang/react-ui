@@ -19,14 +19,17 @@ export function NavItems({ children, direction = "", ...props }: NavItemsProps) 
     )
 }
 
-export function NavLink({ children, tag: Tag = "a", ...props }: NavLinkProps) {
-    return (
+export function NavLink({ children, tag: Tag = "a", asListItem = true, ...props }: NavLinkProps) {
+    if(asListItem)
+        return (
         <li>
             <Tag className="ui-navlink" {...props} >
                 {children}
             </Tag>
         </li>
     )
+
+    return <Tag className="ui-navlink" {...props}>{children}</Tag>
 }
 
 
@@ -60,6 +63,8 @@ export interface NavLinkProps {
 
     /** Tag or component to render, defaults to an anchor tag */
     tag?: ElementType
+
+    asListItem?: boolean;
 
     /** Any other props passed to the navbar */
     [key: string]: any;
