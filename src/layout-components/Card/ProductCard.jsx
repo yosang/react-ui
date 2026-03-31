@@ -5,9 +5,9 @@ import { Label } from '../Label/Label'
 
 export function ProductCard( {children, discount, image, title, description, price,...props }) {
     return (
-        <div className='ui-product-card' style={{ width: "200px" }}>
+        <div className='ui-product-card' style={{ width: "200px" }} {...props}>
             <Container 
-                centered={false} {...props}>
+                centered={false}>
                 
                 {discount && <Label>{discount}%</Label>}
                 
