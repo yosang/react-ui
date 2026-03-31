@@ -1,0 +1,29 @@
+.ui-product-card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: contain ;
+}
+
+.ui-product-card-image-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: var(--color-text-dark);
+}
+
+.ui-product-card-title {
+    color: var(--color-text-dark);
+    font-weight: 600;
+}
+
+.ui-product-card-image:hover {
+    transform: scale(105%);
+}
+
+.ui-product-card-description {
+    color: var(--color-muted)
+}
+
+.ui-product-card-price {
+    margin-top: auto;
+    color: var(--color-text-dark);
+}
