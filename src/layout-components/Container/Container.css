@@ -46,6 +46,12 @@
     border: none;
 }
 
+.ui-container.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 @media (max-width : 600px) {
     .ui-container.direction-row {
         flex-direction: column;

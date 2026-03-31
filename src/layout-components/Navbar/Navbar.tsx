@@ -5,7 +5,7 @@ import '../../main.css'
 
 export function Navbar({ children, sticky = false, ...props }: NavbarProps) {
     return (
-        <Container direction="row" style={sticky ? { position: "sticky", top: 0, zIndex: 1000 } : {}} {...props}>
+        <Container direction="row"  sticky={sticky}{...props}>
             {children}
         </Container>
     )
