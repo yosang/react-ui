@@ -12,7 +12,7 @@ export function Modal({ isOpen, onClose, title, children }) {
                 className="ui-modal"
                 centered={true}
                 border="all"
-                onClick={e => e.stopPropagation()} // prevents closing when clicking inside
+                onClick={e => e.stopPropagation()} // prevents a click from propagnating upwards and accidentally closing the overlay
             >
                 {title && <h2>{title}</h2>}
                 <Divider />

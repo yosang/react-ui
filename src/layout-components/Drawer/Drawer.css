@@ -1,0 +1,34 @@
+.ui-drawer {
+    background-color: var(--color-bg);
+    height: 100%;
+    padding: var(--spacing-md);
+    position: relative;
+    overflow-y: auto;
+    transition: transform var(--transition-speed) ease;
+}
+
+.ui-drawer.right {
+    transform: translateX(100%);
+}
+
+.ui-overlay.open .ui-drawer.right {
+    transform: translateX(0);
+}
+
+.ui-drawer.left {
+    transform: translateX(-100%);
+}
+
+.ui-overlay.open .ui-drawer.left {
+    transform: translateX(0);
+}
+
+.ui-drawer-close {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
