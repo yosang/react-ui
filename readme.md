@@ -30,6 +30,7 @@ Built as a learning project to explore modern UI architecture and design systems
 - Divider
 - Modal
 - Drawer
+- Hero
 
 **Navigation**
 - Navbar
