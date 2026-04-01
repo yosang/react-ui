@@ -9,6 +9,7 @@ export * from "./layout-components/Table/Table.jsx";
 export * from "./layout-components/Drawer/Drawer.jsx";
 export * from "./layout-components/Card/ProductCard.jsx";
 export * from "./layout-components/Label/Label.jsx";
+export * from "./layout-components/Hero/Hero.jsx";
 
 // Typed components
 export { Navbar, NavItems, NavLink, NavLogo } from "./layout-components/Navbar/Navbar";

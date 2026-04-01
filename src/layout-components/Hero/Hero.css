@@ -1,0 +1,44 @@
+.ui-hero {
+    position: relative;
+    z-index: 0;
+    height: auto;
+}
+
+.ui-hero-media {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ui-hero-fallback {
+    background: linear-gradient(135deg, #1a1a1a, #444);
+}
+
+.ui-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    margin: 0;
+    
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ui-hero-content {
+    position: relative;
+    color: var(--color-text);
+    z-index: 2;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.2rem;
+}
