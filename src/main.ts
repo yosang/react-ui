@@ -11,8 +11,8 @@ export * from "./layout-components/Card/ProductCard.jsx";
 export * from "./layout-components/Label/Label.jsx";
 
 // Typed components
-export { Navbar, NavItems, NavLink } from "./layout-components/Navbar/Navbar";
-export type { NavbarProps, NavItemsProps, NavLinkProps } from './layout-components/Navbar/Navbar';
+export { Navbar, NavItems, NavLink, NavLogo } from "./layout-components/Navbar/Navbar";
+export type { NavbarProps, NavItemsProps, NavLinkProps, NavLogoProps } from './layout-components/Navbar/Navbar';
 
 // Icons
 export * from "./icons/index.js";

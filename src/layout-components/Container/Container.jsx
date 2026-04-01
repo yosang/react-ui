@@ -5,6 +5,7 @@ export function Container({ children, centered = true, border = "none", directio
     return (
         <div 
         className={`ui-container 
+            ${layout == "navbar" ? "navbar-layout":""}
             ${layout == "grid" ? "grid-layout":""}
             ${sticky ? "sticky":""}
             ${centered ? "" : "non-centered"}

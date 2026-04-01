@@ -2,12 +2,21 @@ import { useState } from 'react';
 import { Modal } from '../layout-components/Modal/Modal';
 import { Container } from '../layout-components/Container/Container';
 import { Button } from '../button/Button'
+import { Navbar, NavItems, NavLink } from '../layout-components/Navbar/Navbar'
 
 export function ShowModal() {
     const [open, setOpen] = useState(false);
 
     return (
         <Container centered={true} border="none">
+            <Navbar>
+                <p>Logos</p>
+                <NavItems>
+                    <NavLink>Home</NavLink>
+                    <NavLink>About</NavLink>
+                    <NavLink>Contact</NavLink>
+                </NavItems>
+            </Navbar>
             <Button onClick={() => setOpen(true)}>Open Modal</Button>
 
             <Modal isOpen={open} onClose={() => setOpen(false)} title="My Modal">

@@ -18,6 +18,10 @@
   justify-items: center;
 }
 
+.ui-container.navbar-layout {
+    z-index: 1000;
+}
+
 .ui-container.direction-row {
     flex-direction: row;
     justify-content: space-between;

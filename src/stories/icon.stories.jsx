@@ -8,7 +8,15 @@ import { PlusIcon } from "../icons/forms/PlusIcon";
 import { InfoIcon } from "../icons/forms/InfoIcon"
 import { TrashIcon } from "../icons/content/TrashIcon"
 import { EditIcon } from "../icons/content/EditIcon"
+import { CartIcon } from '../icons/interface/Cart'
+import { UserIcon } from '../icons/interface/User'
 
+export function Cart() {
+    return <CartIcon />
+}
+export function User() {
+    return <UserIcon />
+}
 export function Menu() {
     return <MenuIcon />
 }

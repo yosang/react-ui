@@ -32,9 +32,19 @@ export function NavLink({ children, tag: Tag = "a", asListItem = true, ...props 
     return <Tag className="ui-navlink" {...props}>{children}</Tag>
 }
 
+export function NavLogo({ src = "https://i.imgur.com/zXkrJtJ.png", height = "110px" , ...props }: NavLogoProps) {
+    return <img style={{ width: "auto", height: height, objectFit: "contain" }} src={src} />
+}
 
 // Types
 
+export interface NavLogoProps {
+    src: string;
+    height: string;
+
+    /** Any other props passed to the navbar */
+    [key: string]: any;
+}
 export interface NavbarProps {
     /** Content inside the link */
     children: ReactNode;
