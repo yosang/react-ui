@@ -32,13 +32,14 @@ export function NavLink({ children, tag: Tag = "a", asListItem = true, ...props 
     return <Tag className="ui-navlink" {...props}>{children}</Tag>
 }
 
-export function NavLogo({ src = "https://i.imgur.com/zXkrJtJ.png", height = "110px" , ...props }: NavLogoProps) {
-    return <img style={{ width: "auto", height: height, objectFit: "contain" }} src={src} />
+export function NavLogo({ tag: Tag = "a", src = "https://i.imgur.com/zXkrJtJ.png", height = "110px" , ...props }: NavLogoProps) {
+    return <Tag className="ui-navlink" {...props}><img style={{ width: "auto", height: height, objectFit: "contain" }} src={src} /></Tag>
 }
 
 // Types
 
 export interface NavLogoProps {
+    tag?: ElementType
     src: string;
     height: string;
 

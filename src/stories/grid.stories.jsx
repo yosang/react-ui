@@ -73,9 +73,9 @@ export function ShowGrid() {
         <>
             <Container sticky={true}>
                 <Navbar>
-                    <NavLogo height='60px' />
+                    {/* <NavLogo height='60px' /> */}
+                    <NavLogo href="https://www.google.com/" src='https://i.imgur.com/UlFsk3d.png'/>
                     <NavItems>
-                        <NavLink onClick={() => setOpen(true)} ><UserIcon /></NavLink>
                         <NavLink onClick={() => setDrawerOpen(true)} ><CartIcon /></NavLink>
                     </NavItems>
                 </Navbar>
