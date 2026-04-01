@@ -10,3 +10,4 @@ export * from "./content/TrashIcon";
 export * from "./content/EditIcon";
 export * from "./interface/User";
 export * from "./interface/Cart";
+export * from "./social/Social"

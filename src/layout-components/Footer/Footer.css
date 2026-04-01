@@ -1,0 +1,10 @@
+.ui-footer {
+    padding: var(--spacing-sm) var(--spacing-sm);
+    background-color: var(--color-bg);
+    font-size: var(--font-size);
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
