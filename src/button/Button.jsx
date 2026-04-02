@@ -24,9 +24,12 @@ export function Button({
             ${props.disabled || spinnerEnabled ? 'disabled' : ''}`}
             onClick={onClick} {...props}
             style={{ position: "relative" }}
-            disabled={props.disabled || spinnerEnabled}>
+            disabled={props.disabled || spinnerEnabled}
+            {...props}
+        >
             {rippleEffect && <Ripple hoverOpacity={0}
             />}
+
 
             {icon && hasText && <span className='ui-button-icon-text'>{icon}</span>}
             {icon && !hasText && <span className='ui-button-icon'>{icon}</span>}

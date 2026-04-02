@@ -23,7 +23,7 @@ export const Clickable = () => (
 );
 
 export const Custom = () => (
-    <Button variant="primary" style={{ backgroundColor: "red" }}>
+    <Button style={{ backgroundColor: "red" }}>
         Custom color
     </Button>
 )
