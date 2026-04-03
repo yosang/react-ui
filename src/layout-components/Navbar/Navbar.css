@@ -11,13 +11,57 @@
     flex-direction: column;
 }
 
+
 .ui-navlink {
     margin: 0;
     font-size: var(--font-size);   
-    color: var(--color-text-dark);
     text-decoration: none;
     cursor: pointer;
 }
+
+.ui-navlink.animated {
+    position: relative;
+    cursor: pointer;
+}
+
+.ui-navlink.animated::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+    height: 2px;
+}
+
+.ui-navlink.animated-left::after {
+    left: 0;
+}
+
+.ui-navlink.animated-left:hover::after {
+    width: 100%;
+}
+
+.ui-navlink.animated-right::after {
+    right: 0;
+}
+
+.ui-navlink.animated-right:hover::after {
+    width: 100%;
+}
+
+.ui-navlink.animated-center::after {
+    left: 0;
+    width: 100%;
+
+    transform: scaleX(0);
+    transform-origin: center;
+}
+
+.ui-navlink.animated-center:hover::after {
+    transform: scaleX(1)
+}
+
 
 @media (max-width : 600px) {
     .ui-navitems {
