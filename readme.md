@@ -5,8 +5,8 @@
 # About
 A minimalistic and professional React UI component library.
 
-> ⚠️ This library is currently experimental and not recommended for production use.
-> Components are still being improved for type safety and accessibility.
+> ⚠️ This library is currently experimental and for learning purposes. I do not by any means recommended using this in a real application.
+> Components are still being improved for type safety and accessibility and also lack performance optimization.
 
 Built as a learning project to explore modern UI architecture and design systems.
 
@@ -19,7 +19,9 @@ Built as a learning project to explore modern UI architecture and design systems
 ## Roadmap
 
 - [ ] TypeScript support
-- [ ] Accessibility improvements (ARIA)
+- [ ] Accessibility improvements
+- [ ] Performance improvements
+- [ ] Charts
 - [ ] Component documentation
 - [ ] Theme customization
 
