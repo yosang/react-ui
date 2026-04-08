@@ -5,9 +5,11 @@ import '../../main.css'
 
 export function Navbar({ children, sticky = false, ...props }: NavbarProps) {
     return (
+        <nav>
         <Container direction="row"  sticky={sticky}{...props}>
             {children}
         </Container>
+        </nav>
     )
 }
 

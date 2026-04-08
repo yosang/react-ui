@@ -1,4 +1,3 @@
-import { Container } from '../Container/Container'
 import './Hero.css'
 import '../../main.css'
 
@@ -18,26 +17,24 @@ export function Hero({ children,
                 autoPlay
                 loop
                 muted
-                playsInline // ensures autoplay works on mobile Safari
+                playsInline // works on mobile Safari
                 className='ui-hero-media'
+
+                // Accessiblity
+                aria-label={props.ariaLabel || "Background Video"}
+                preload='none'
             />
         )
     } else if (type === "image" && src) {
-        mediaElement = (
-            <img src={src} className='ui-hero-media' />
-        )
+        mediaElement = ( <img src={src} loading='lazy' alt={props.alt || "Hero image"} className='ui-hero-media' /> )
     } else {
         mediaElement = (<div className="ui-hero-media ui-hero-fallback" />)
     }
 
     return (
-        <div className='ui-hero' style={style}>
+        <div className='ui-hero' style={style} {...props}>
 
             {mediaElement}
-            {/* {type === "image" && src ? (
-                <video src={src} className='ui-hero-media' />
-            ) : fallbackMedia} */}
-
 
             {/* overlay */}
             <div className='ui-hero-overlay' style={{ backgroundColor: `rgba(0, 0, 0, ${alpha})` }}>

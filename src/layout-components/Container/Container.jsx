@@ -22,6 +22,7 @@ export function Container({ children,
                 : border == "none" ? "border-none"
                 : "border-all"}`
         }
+
         {...props}>
             {children}
         </div >

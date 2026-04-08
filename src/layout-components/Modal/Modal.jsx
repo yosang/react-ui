@@ -1,6 +1,7 @@
 import './Modal.css';
 import '../../main.css'
 
+import { CrossIcon } from '../../icons/action/CrossIcon'
 import { Container } from '../Container/Container';
 import { Divider } from '../Divider/Divider';
 
@@ -16,7 +17,7 @@ export function Modal({ isOpen, onClose, title, children }) {
             >
                 {title && <h2>{title}</h2>}
                 <Divider />
-                <button className="ui-modal-close" onClick={onClose}>×</button>
+                <CrossIcon className="ui-modal-close" onClick={onClose}/>
                 {children}
             </Container>
         </div>
