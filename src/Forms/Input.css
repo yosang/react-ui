@@ -16,6 +16,11 @@
     border-color: var(--color-secondary);
 }
 
+.ui-input.input-error {
+    border-color: red;
+    animation: appear 0.8s ease;
+}
+
 .ui-input:focus {
     outline: none;
     border-color: var(--color-primary);
@@ -31,4 +36,40 @@
 
 .ui-input:hover:not(:disabled) {
     background-color: var(--color-highlight);
+}
+
+.ui-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.ui-input-wrapper label {
+    display: inline-flex;
+    align-items: center;
+    gap: 1em;
+    min-width: 150px;
+}
+
+.ui-input-wrapper.label-left{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ui-input-wrapper.label-right{
+    flex-flow: row-reverse;
+}
+
+.ui-input-wrapper .error-message {
+    color: red;
+    animation: appear 0.8s ease;
+}
+
+@keyframes appear {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 1; }
 }
