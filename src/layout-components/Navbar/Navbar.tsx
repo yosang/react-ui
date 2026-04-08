@@ -21,7 +21,7 @@ export function NavItems({ children, direction = "", ...props }: NavItemsProps) 
     )
 }
 
-export function NavLink({ children, tag: Tag = "a", animated = {}, asListItem = true, ...props }: NavLinkProps) {
+export function NavLink({ children, tag: Tag = "a", animated = {}, ...props }: NavLinkProps) {
     const isAnimated = animated?.left || animated?.right || animated?.center;
 
     const animationClass = 
@@ -29,16 +29,8 @@ export function NavLink({ children, tag: Tag = "a", animated = {}, asListItem = 
     animated.right ? "animated-right":
     animated.center ? "animated-center":""
 
-    if(asListItem)
-        return (
-        <li>
-            <Tag className={`ui-navlink ${isAnimated ? "animated":""} ${animationClass}`} {...props} >
-                {children}
-            </Tag>
-        </li>
-    )
 
-    return <Tag className="ui-navlink" {...props}>{children}</Tag>
+    return <Tag className={`ui-navlink ${isAnimated ? "animated":""} ${animationClass}`} {...props}>{children}</Tag>
 }
 
 export function NavLogo({ tag: Tag = "a", src = "https://i.imgur.com/zXkrJtJ.png", height = "110px" , ...props }: NavLogoProps) {
