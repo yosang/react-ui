@@ -1,6 +1,6 @@
 {
   "name": "@yosang/react-ui",
-  "version": "1.19.0",
+  "version": "1.20.0",
   "description": "A small react component library inspired by material UI",
   "main": "src/main.js",
   "files": [
