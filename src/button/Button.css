@@ -9,6 +9,7 @@
     transition: all var(--transition-speed);
     display: inline-flex;
     align-items: center;
+    justify-content: center;
 }
 
 .ui-button:focus {
@@ -43,14 +44,26 @@
 }
 
 .ui-button-icon-text {
-    margin-right: 8px;
+    margin-right: 0.5em;
     position: relative;
-    top: 1px;
+    top: 0.1em;
 }
 
 .ui-button-icon.lucide {
     position: relative;
     top: 1px;
+}
+
+.ui-button-icon-text svg {
+    width: 1em;
+    height: 1em;
+    padding: 0;
+}
+
+.ui-button-icon svg {
+    width: 1em;
+    height: 1em;
+    padding: 0;
 }
 
 .ui-button.disabled {

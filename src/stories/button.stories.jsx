@@ -29,7 +29,7 @@ export const Custom = () => (
 )
 
 export const IconWithText = () => (
-    <Button variant="primary" icon={<CrossIcon />}>
+    <Button style={{ fontSize:"20px" }} variant="primary" icon={<CrossIcon />}>
         Button with an icon
     </Button>
 )
@@ -41,7 +41,7 @@ export const IconWithTextAndNoRipple = () => (
 )
 
 export const IconWithoutText = () => (
-    <Button variant="primary" icon={<CrossIcon style={{color: "black"}} />} />
+    <Button variant="primary" icon={<CrossIcon style={{ color: "black"}} />} />
 )
 
 export const TrashIconWithoutText = () => (
