@@ -1,5 +1,5 @@
 import { Menu } from "lucide-react";
 
-export function MenuIcon() {
-    return <Menu color="currentColor" />
+export function MenuIcon(props) {
+    return <Menu color="currentColor" {...props}/>
 }

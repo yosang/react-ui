@@ -1,5 +1,5 @@
 import { ShoppingCart } from 'lucide-react'
 
-export function CartIcon() {
-    return <ShoppingCart color='currentColor' />
+export function CartIcon(props) {
+    return <ShoppingCart color='currentColor' {...props}/>
 }

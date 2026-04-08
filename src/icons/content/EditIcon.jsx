@@ -1,5 +1,5 @@
 import { Pencil } from "lucide-react";
 
-export function EditIcon() {
-    return <Pencil color="currentColor" />
+export function EditIcon(props) {
+    return <Pencil color="currentColor" {...props}/>
 }

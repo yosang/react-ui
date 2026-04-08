@@ -1,5 +1,5 @@
 import { ArrowLeft } from "lucide-react";
 
-export function ArrowLeftIcon() {
-    return <ArrowLeft color="currentColor" />
+export function ArrowLeftIcon(props) {
+    return <ArrowLeft color="currentColor" {...props}/>
 }

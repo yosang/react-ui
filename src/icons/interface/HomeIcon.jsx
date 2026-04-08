@@ -1,5 +1,5 @@
 import { House } from "lucide-react";
 
-export function HomeIcon() {
-    return <House color="currentColor" />
+export function HomeIcon(props) {
+    return <House color="currentColor" {...props}/>
 }

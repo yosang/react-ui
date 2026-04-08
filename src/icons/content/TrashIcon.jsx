@@ -1,5 +1,5 @@
 import { Trash } from "lucide-react";
 
-export function TrashIcon() {
-    return <Trash color="currentColor" />
+export function TrashIcon(props) {
+    return <Trash color="currentColor" {...props}/>
 }

@@ -108,4 +108,3 @@ This project is a personal effort to learn and understand how modern UI librarie
 
 ## Dependencies
 - [lucide-react](https://lucide.dev/icons/)
-- [m3-ripple](https://github.com/SaltyAom/m3-ripple)

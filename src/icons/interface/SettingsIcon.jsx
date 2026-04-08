@@ -1,5 +1,5 @@
 import { Settings } from "lucide-react";
 
-export function SettingsIcon() {
-    return <Settings color="currentColor" />
+export function SettingsIcon(props) {
+    return <Settings color="currentColor" {...props}/>
 }

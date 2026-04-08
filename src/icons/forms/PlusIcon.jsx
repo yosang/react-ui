@@ -1,5 +1,5 @@
 import { Plus } from "lucide-react";
 
-export function PlusIcon() {
-    return <Plus color="currentColor" />
+export function PlusIcon(props) {
+    return <Plus color="currentColor" {...props}/>
 }
